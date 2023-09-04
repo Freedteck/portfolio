@@ -97,7 +97,18 @@ header {
     padding: 30px 0;
     align-items: center;
 }
-
+#port-col span {
+    position: absolute;
+    background-color: darkcyan;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.port {
+    position: relative;
+}
 .title {
     text-transform: uppercase;
     font-weight: 900;
@@ -111,14 +122,20 @@ header {
 }
 
 #port-col>div {
-    box-shadow: 0 0 4px grey;
+    box-shadow: 0 0 2px grey;
     padding: 20px 0;
     border-radius: 20px;
+    overflow: hidden;
     background-color: white;
     width: 300px;
     display: flex;
     justify-content: center;
 }
+#port-col>div:hover {
+    box-shadow: 0 0 4px 1px grey;
+
+}
+
 
 .skills {
     display: flex;
